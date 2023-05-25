@@ -6,138 +6,210 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Renato Báez Lobos</title>
     <!-- Bootstrap -->
-    <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icon-->
+    <link href="./assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 	<!-- Font-Awesome -->
-    <link href="./assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./assets/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    
     <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 <body>
-    <!-- HEADER SECTION -->
-        <header id="home">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="menu-wrap">
-				<nav class="menu">
-				    <!-- Menu Links -->
-					<div class="icon-list">
-						<a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Inicio</span></a>
-						<a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>Acerca de mí</span></a>
-						<a href="index.html#skills"><i class="fa fa-fw fa-code"></i><span>Habilidades</span></a>
-						<a href="index.html#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portafolio</span></a>
-						<a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contacto</span></a>
-					</div>
-				</nav>
-			    </div>
-			    <button class="menu-button" id="open-button"></button><!-- menu button -->
-              </div><!--/row-->
-            </div><!--/container-->
-		  <!-- Header Image -->
-          <section class="renato" id="renato">
-            <div class="container">
-			  <!-- Slider Button (don't edit!)-->
-              <div class="row">
-                <div class="col-md-12 text-right navicon">
-                  <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
-                </div>
-              </div>
-			  <!-- HEADER HEADLINE -->
-              <div class="row">
-                <div class="col-md-8 col-md-offset-1 inner">
-                  <h1 class="animated fadeInDown">
-                    <span style="color: #059bf1;">R</span>enato<br/>
-                    <span style="color: #059bf1;">B</span><span>aez</span><br/>
-                    <span style="color: #059bf1;">L</span><span>obos</span>
-                  </h1><!-- Title -->
-                  <h3 class="animated fadeInUp delay-05s"><span class="rotate">Ingeniero <br/>en Computación e Informática</span></h3><!-- Text Rotator -->
-                </div>
-              </div>
-			  <!-- Learn More Button -->
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                  <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
-			            <p>Ver más</p>
-			            <p class="scrollto--arrow"><img src="./assets/img/scroll-down.png" alt="scroll down arrow"></p>
-			        </a>
-                </div>
-              </div>
-            </div>
-          </section>
-		  <!-- Header Image End -->
-        </header>
-        <div>PRUEBA DE PULL REQUEST</div>
-		<!-- HEADER SECTION END -->
-
-         <!-- SKILLS SECTION 
-    <section id="skills" class="skills">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>HABILIDADES</h2>
-          <p>He adquirido habilidades sólidas en el manejo de diversos lenguajes de programación. A lo largo de mi trayectoria, he trabajado en una amplia gama de proyectos y he utilizado estos lenguajes para desarrollar soluciones eficientes y funcionales</p>
+  <!-- HEADER SECTION -->
+  <header id="home">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="menu-wrap">
+				  <nav class="menu">
+				  <!-- Menu Links -->
+					  <div class="icon-list">
+						  <a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Inicio</span></a>
+						  <a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>Acerca de mí</span></a>
+						  <a href="index.html#skills"><i class="fa fa-fw fa-code"></i><span>Habilidades</span></a>
+						  <a href="index.html#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portafolio</span></a>
+						  <a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contacto</span></a>
+					  </div>
+          </nav>
+			  </div>
+			  <button class="menu-button" id="open-button"></button><!-- menu button -->
+      </div><!--/row-->
+    </div><!--/container-->
+		<!-- Header Image -->
+    <section class="renato" id="renato">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-1 inner">
+            <h1 class="animated fadeInDown">
+              <span style="color: #059bf1;">R</span>enato<br/>
+              <span style="color: #059bf1;">B</span><span>aez</span><br/>
+              <span style="color: #059bf1;">L</span><span>obos</span>
+            </h1><!-- Title -->
+            <h3 class="animated fadeInUp delay-05s">
+              <span class="rotate">Ingeniero <br/>en Computación e Informática</span>
+            </h3>
+          </div>
         </div>
+			  <!-- See More Button -->
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
+			        <p>Ver más</p>
+			        <p class="scrollto--arrow"><img src="./assets/img/scroll-down.png" alt="Flecha para seguir viendo"></p>
+			      </a>
+          </div>
+        </div>
+      </div>
+    </section>
+		  <!-- Header Image End -->
+  </header>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
 
-        <div class="row skills-content">
+      <div class="section-title">
+        <h2>Acerca de mí</h2>
+        <p><i class="bx bxs-quote-alt-left quote-icon-left"></i>Soy apasionado por las tecnologías emergentes. Tengo más de 17 años de experiencia en el campo de la informática, trabajando en diversos roles y proyectos.<i class="bx bxs-quote-alt-right quote-icon-right"></i></p>
+      </div>
 
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="assets/img/about.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 about-content">
+          <h3>Datos personales</h3>
+          <p class="fst-italic">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-rounded-right"></i> <strong>Nombre:</strong> Renato Francisco Báez Lobos</li>
+                <li><i class="bi bi-rounded-right"></i> <strong>Nacimiento:</strong> 22 Marzo 1984</li>
+                <li><i class="bi bi-rounded-right"></i> <strong>Ciudad:</strong> Iquique, Chile</li>
+              </ul>
             </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><i class="bi bi-rounded-right"></i> <strong>Teléfono:</strong> +56 961 586 551</li>
+                <li><i class="bi bi-rounded-right"></i> <strong>Email:</strong> rbaezlobos@gmail.com</li>
+                <li><i class="bi bi-rounded-right"></i> <strong>Freelance:</strong> Disponible</li>
+              </ul>
             </div>
+          </div>
+        </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 about-content">
+          <h3>Estudios</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perferendis voluptatem impedit? Iure vero voluptatibus debitis 
+            a laudantium autem odio reprehenderit blanditiis excepturi, eaque iusto distinctio exercitationem rerum molestias amet!.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perferendis voluptatem impedit? Iure vero voluptatibus debitis 
+            a laudantium autem odio reprehenderit blanditiis excepturi, eaque iusto distinctio exercitationem rerum molestias amet!.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perferendis voluptatem impedit? Iure vero voluptatibus debitis 
+            a laudantium autem odio reprehenderit blanditiis excepturi, eaque iusto distinctio exercitationem rerum molestias amet!.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perferendis voluptatem impedit? Iure vero voluptatibus debitis 
+            a laudantium autem odio reprehenderit blanditiis excepturi, eaque iusto distinctio exercitationem rerum molestias amet!.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perferendis voluptatem impedit? Iure vero voluptatibus debitis 
+            a laudantium autem odio reprehenderit blanditiis excepturi, eaque iusto distinctio exercitationem rerum molestias amet!.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et perferendis voluptatem impedit? Iure vero voluptatibus debitis 
+            a laudantium autem odio reprehenderit blanditiis excepturi, eaque iusto distinctio exercitationem rerum molestias amet!.
+          </p>
+        </div>
+      </div>
 
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Habilidades</h2>
+        <p>He adquirido habilidades sólidas en el manejo de diversos lenguajes de programación. A lo largo de mi trayectoria, he trabajado en una amplia gama de proyectos y he utilizado estos lenguajes para desarrollar soluciones eficientes y funcionales.</p>
+      </div>
+
+      <div class="row skills-content">
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">HTML <i class="val">100%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-
           </div>
 
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+          <div class="progress">
+            <span class="skill">CSS <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
+          </div>
 
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+          <div class="progress">
+            <span class="skill">JavaScript <i class="val">75%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
+          </div>
 
-            <div class="progress">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">PHP <i class="val">80%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
+          </div>
 
+          <div class="progress">
+            <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Photoshop <i class="val">55%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
           </div>
 
         </div>
 
       </div>
-    </section><!-- End Skills Section -->
+
+    </div>
+  </section><!-- End Skills Section -->
   <!-- jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <!-- Bootstrap -->
-  <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./assets/vendor/bootstrap/js/bootstrap.min.js"></script>
   <!-- classie.js -->
 	<script src="./assets/js/classie.js"></script>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <!-- JavaScript -->
   <script src="./assets/js/script.js"></script>
 
