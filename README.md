@@ -1,6 +1,8 @@
 # ME
-Portafolio de Renato Baez
-¡Bienvenido a mi portafolio!
+¡Bienvenido a mi CV y portafolio!
 
-Descripción
-Este portafolio es una muestra de mi trabajo y habilidades como Ingeniero de Software. Aquí encontrarás una selección de proyectos en los que he trabajado, así como información sobre mi experiencia, habilidades y formación académica.
+PULL REQUESTS
+https://github.com/javiernfigueroa/javiernfigueroa.github.io
+https://github.com/AngelloAbor/AngelloAbor.github.io
+https://github.com/burgosuc/burgosuc.github.io-curriculo
+https://github.com/jorgelopezd/portafolio
