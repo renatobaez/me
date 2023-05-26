@@ -14,7 +14,7 @@
 
 /* Global Styles */
 a {
-	color: #E04343;
+	color: #059bf1;
 	-webkit-transition:all 0.5s;
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;
@@ -384,9 +384,7 @@ table {
 }
 	
   
-  /*--------------------------------------------------------------
-  # Skills
-  --------------------------------------------------------------*/
+  /* Skills */
   .skills .progress {
 	height: 60px;
 	display: block;
@@ -420,27 +418,11 @@ table {
 	background-color: #059bf1;
   }
   
-  /*--------------------------------------------------------------
-  # Facts
-  --------------------------------------------------------------*/
-  .facts .counters span {
-	font-size: 48px;
-	display: block;
-	color: #059bf1;
-  }
-  
-  .facts .counters p {
-	padding: 0;
-	margin: 0 0 20px 0;
-	font-family: "Raleway", sans-serif;
-	font-size: 14px;
-  }
+
   
   
-  /*--------------------------------------------------------------
-  # Resume
-  --------------------------------------------------------------*/
-  .resume .resume-title {
+  /* Curriculum */
+  .curriculum .curriculum-title {
 	font-size: 26px;
 	font-weight: 400;
 	margin-top: 20px;
@@ -448,14 +430,14 @@ table {
 	color: #222222;
   }
   
-  .resume .resume-item {
+  .curriculum .curriculum-item {
 	padding: 0 0 20px 20px;
 	margin-top: -2px;
 	border-left: 2px solid #059bf1;
 	position: relative;
   }
   
-  .resume .resume-item h4 {
+  .curriculum .curriculum-item h4 {
 	line-height: 18px;
 	font-size: 18px;
 	font-weight: 600;
@@ -464,7 +446,7 @@ table {
 	margin-bottom: 10px;
   }
   
-  .resume .resume-item h5 {
+  .curriculum .curriculum-item h5 {
 	font-size: 16px;
 	background: #effbf9;
 	padding: 5px 15px;
@@ -474,19 +456,19 @@ table {
 	color: #059bf1;
   }
   
-  .resume .resume-item ul {
+  .curriculum .curriculum-item ul {
 	padding-left: 20px;
   }
   
-  .resume .resume-item ul li {
+  .curriculum .curriculum-item ul li {
 	padding-bottom: 10px;
   }
   
-  .resume .resume-item:last-child {
+  .curriculum .curriculum-item:last-child {
 	padding-bottom: 0;
   }
   
-  .resume .resume-item::before {
+  .curriculum .curriculum-item::before {
 	content: "";
 	position: absolute;
 	width: 16px;
@@ -498,6 +480,330 @@ table {
 	border: 2px solid #059bf1;
   }
 
+  /* Portfolio */
+.portfolio .portfolio-item {
+	margin-bottom: 30px;
+  }
+  
+  .portfolio #portfolio-flters {
+	padding: 0;
+	margin: 0 auto 20px auto;
+	list-style: none;
+	text-align: center;
+  }
+  
+  .portfolio #portfolio-flters li {
+	cursor: pointer;
+	display: inline-block;
+	padding: 8px 16px 10px 16px;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 1;
+	text-transform: uppercase;
+	color: #444444;
+	margin-bottom: 5px;
+	transition: all 0.3s ease-in-out;
+	border-radius: 50px;
+  }
+  
+  .portfolio #portfolio-flters li:hover,
+  .portfolio #portfolio-flters li.filter-active {
+	color: #fff;
+	background: #059bf1;
+  }
+  
+  .portfolio #portfolio-flters li:last-child {
+	margin-right: 0;
+  }
+  
+  .portfolio .portfolio-wrap {
+	transition: 0.3s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background: rgba(34, 34, 34, 0.6);
+  }
+  
+  .portfolio .portfolio-wrap::before {
+	content: "";
+	background: rgba(34, 34, 34, 0.6);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	transition: all ease-in-out 0.3s;
+	z-index: 2;
+	opacity: 0;
+  }
+  
+  .portfolio .portfolio-wrap img {
+	transition: all ease-in-out 0.3s;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+	transition: all ease-in-out 0.3s;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding: 20px;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info h4 {
+	font-size: 20px;
+	color: #fff;
+	font-weight: 600;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info p {
+	color: rgba(255, 255, 255, 0.7);
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+	font-style: italic;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links {
+	text-align: center;
+	z-index: 4;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links a {
+	color: #fff;
+	margin: 0 5px 0 0;
+	font-size: 28px;
+	display: inline-block;
+	transition: 0.3s;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links a:hover {
+	color: #059bf1;
+  }
+  
+  .portfolio .portfolio-wrap:hover::before {
+	opacity: 1;
+  }
+  
+  .portfolio .portfolio-wrap:hover img {
+	transform: scale(1.2);
+  }
+  
+  .portfolio .portfolio-wrap:hover .portfolio-info {
+	opacity: 1;
+  }
+  
+  /* Portfolio Details */
+  .portfolio-details {
+	padding-top: 0;
+  }
+  
+  .portfolio-details .portfolio-details-slider img {
+	width: 100%;
+  }
+  
+  .portfolio-details .portfolio-details-slider .swiper-pagination {
+	margin-top: 20px;
+	position: relative;
+  }
+  
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	opacity: 1;
+	border: 1px solid #059bf1;
+  }
+  
+  .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+	background-color: #059bf1;
+  }
+  
+  .portfolio-details .portfolio-info {
+	padding: 30px;
+	box-shadow: 0px 0 30px rgba(34, 34, 34, 0.08);
+  }
+  
+  .portfolio-details .portfolio-info h3 {
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+  }
+  
+  .portfolio-details .portfolio-info ul {
+	list-style: none;
+	padding: 0;
+	font-size: 15px;
+  }
+  
+  .portfolio-details .portfolio-info ul li+li {
+	margin-top: 10px;
+  }
+  
+  .portfolio-details .portfolio-description {
+	padding-top: 30px;
+  }
+  
+  .portfolio-details .portfolio-description h2 {
+	font-size: 26px;
+	font-weight: 700;
+	margin-bottom: 20px;
+  }
+  
+  .portfolio-details .portfolio-description p {
+	padding: 0;
+  }
+
+
+  .swag {
+	padding:75px 0;
+}
+.swag h1 {
+	text-transform:uppercase;
+	letter-spacing:5px;
+}
+.swag h1 span {
+	display:block;
+	font-size:25px;
+	margin-top:20px;
+}
+.down-arrow-btn {
+	width:auto;
+	height:40px;
+	background:rgba(0,0,0,0.6);
+	display:inline-block;
+	margin:15px 5px 15px 5px;
+	color:#fff;
+	font-size:16px;
+	line-height:40px;
+	padding:0px 10px;
+	text-align:center;
+}
+.down-arrow-btn:hover,.down-arrow-btn:focus {
+	color:#fff;
+	background:rgba(0,0,0,1);
+}
+.portfolio img {
+	height:300px;
+	width:100%;
+}
+
+
+/* Contact */
+.contact-details {
+	margin:70px 0;
+}
+.contact-details h2 {
+	font-size:20px;
+}
+.contact-details h2 span {
+	display:block;
+	color:#545454;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	font-size:14px;
+	margin-top:15px;
+}
+.contact-wrap {
+	position:relative;
+}
+
+.contact {
+	margin-top:-20px!important;
+}
+.contact label {
+	float:left;
+}
+.contact .form-control {
+	margin-bottom:20px;
+	border:1px solid #cbcbcb;
+	height:45px;
+}
+.contact textarea.form-control {
+	height: 310px;
+}
+
+/* Inputs styles */
+.contact .form-control {
+	border-radius:0!important;
+	;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+.contact .form-control:focus {
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	border:1px solid #B0B0B0;
+}
+
+.btn-send{
+	background:#059bf1;
+	color: white;
+	transition: all 0.4s;
+	border-radius: 0;
+	float: right;
+}
+
+.btn-send:hover{
+	background: #000;
+	color: #059bf1
+}
+
+button,button:focus,button:hover,button:active {
+	outline: none!important;
+}
+ul.social-buttons {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+ul.social-buttons li {
+	display:inline-block;
+	margin-right:10px;
+}
+ul.social-buttons li:last-child {
+	margin-right:0;
+}
+.social-btn {
+	width:40px;
+	height:40px;
+	background: #059bf1;
+	display:inline-block;
+	color:#fff;
+	font-size:17px;
+	line-height:40px;
+	text-align:center;
+}
+.social-btn:hover,.social-btn:focus {
+	background: rgba(0, 0, 0, 1);
+	color: #059bf1;
+}
+.social {
+	margin-top: 25px
+}
+
+
+/* Footer  */
+footer a {
+	color:#a1a9b0;
+}
+footer {
+	background-color:#f3f5f8;
+	padding:40px 0 30px;
+}
+footer p {
+	color: #808080;
+}
 
 /* Boucing Arrow Animation */
 @keyframes arrowbounce {
@@ -560,6 +866,9 @@ table {
 	.about img {
 		width: 30%;
 	}
+	.portfolio-item{
+		height: 80%;
+	}
 }
 /* 480px (WVGA - Low End Windows Phone) */
 @media screen and (max-width:480px) {
@@ -571,6 +880,9 @@ table {
 	}
 	.about img {
 		width: 30%;
+	}
+	.portfolio-item{
+		height: 80%;
 	}
 }
 
@@ -616,6 +928,14 @@ table {
 	.about img {
 		width: 40%;
 	}
+	.portfolio-item{
+		height: 80%;
+	}
+}
+@media screen and (max-width:767px) {
+	.portfolio-item{
+		height: 80%;
+	}
 }
 @media screen and (max-width:50em) {
 	.icon-list a {
@@ -657,6 +977,9 @@ table {
 	.about img {
 		width: 50%;
 	}
+	.portfolio-item{
+		width: 80%;
+	}
 }
 /* xGA iPad */
 @media screen and (max-width:1024px) {
@@ -672,6 +995,7 @@ table {
 	.about img {
 		width: 50%;
 	}
+	
 }
 /* 1200px (Small Desktop,Netbook) */
 @media screen and (max-width:1280px) {

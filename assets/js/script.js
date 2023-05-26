@@ -2,6 +2,8 @@ $(window).load(function(){
 	$('#preloader').fadeOut('slow',function(){$(this).remove();});
 });
 
+
+
 /* Menu */ 
 (function() {
 
@@ -35,15 +37,23 @@ $(window).load(function(){
 	init();
 
 })();
+/* smooth scrolling */
+$(document).ready(function(){
+	$("a").on('click', function(event) {
+	  if (this.hash !== "") {
+		
+		event.preventDefault();
+  		var hash = this.hash;
+  		$('html, body').animate({
+		  scrollTop: $(hash).offset().top
+		}, 800, function(){
+  
+		  window.location.hash = hash;
+		});
+	  }
+	});
+});
 
-
-/**
-* Template Name: Kelly
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
 	"use strict";
   
@@ -150,13 +160,7 @@ $(window).load(function(){
 	/**
 	 * Scroll with ofset on page load with hash links in the url
 	 */
-	window.addEventListener('load', () => {
-	  if (window.location.hash) {
-		if (select(window.location.hash)) {
-		  scrollto(window.location.hash)
-		}
-	  }
-	});
+	
   
 	/**
 	 * Preloader
@@ -168,35 +172,7 @@ $(window).load(function(){
 	  });
 	}
   
-	/**
-	 * Porfolio isotope and filter
-	 */
-	window.addEventListener('load', () => {
-	  let portfolioContainer = select('.portfolio-container');
-	  if (portfolioContainer) {
-		let portfolioIsotope = new Isotope(portfolioContainer, {
-		  itemSelector: '.portfolio-item'
-		});
-  
-		let portfolioFilters = select('#portfolio-flters li', true);
-  
-		on('click', '#portfolio-flters li', function(e) {
-		  e.preventDefault();
-		  portfolioFilters.forEach(function(el) {
-			el.classList.remove('filter-active');
-		  });
-		  this.classList.add('filter-active');
-  
-		  portfolioIsotope.arrange({
-			filter: this.getAttribute('data-filter')
-		  });
-		  portfolioIsotope.on('arrangeComplete', function() {
-			AOS.refresh()
-		  });
-		}, true);
-	  }
-  
-	});
+	
   
 	/**
 	 * Initiate portfolio lightbox 
@@ -247,40 +223,5 @@ $(window).load(function(){
 		}
 	  })
 	}
-  
-	/**
-	 * Testimonials slider
-	 */
-	new Swiper('.testimonials-slider', {
-	  speed: 600,
-	  loop: true,
-	  autoplay: {
-		delay: 5000,
-		disableOnInteraction: false
-	  },
-	  slidesPerView: 'auto',
-	  pagination: {
-		el: '.swiper-pagination',
-		type: 'bullets',
-		clickable: true
-	  }
-	});
-  
-	/**
-	 * Animation on scroll
-	 */
-	window.addEventListener('load', () => {
-	  AOS.init({
-		duration: 1000,
-		easing: "ease-in-out",
-		once: true,
-		mirror: false
-	  });
-	});
-  
-	/**
-	 * Initiate Pure Counter 
-	 */
-	new PureCounter();
-  
+    
   })()
