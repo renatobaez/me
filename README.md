@@ -1,5 +1,4 @@
 # ME
-CV de Renato Baez
 ¡Bienvenido a mi CV y portafolio!
 
 PULL REQUESTS
