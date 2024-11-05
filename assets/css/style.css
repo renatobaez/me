@@ -12,7 +12,8 @@
 }
 
 body {
-	background-color: #f3f5f8;
+	background-color: #121313;
+	color: #a7a7a7;
 }
 
 /* Global Styles */
@@ -29,13 +30,13 @@ a {
 a:hover,
 a:focus,
 a:active {
-	color: #0D0D0D;
+	color: #dbdada;
 	text-decoration: none;
 	outline: none !important;
 }
 
 p {
-	color: #808080;
+	color: #ffffff;
 	word-spacing: 1px;
 	line-height: 25px;
 	font-size: 14px;
@@ -57,13 +58,13 @@ h2::after {
 
 h6 {
 	font-size: 15px;
-	color: #8c8c8c;
+	color: #ffffff;
 	text-transform: uppercase;
 	font-weight: bold;
 }
 
 h6::after {
-	border: solid 1px #CCCCCC;
+	border: solid 1px #ffffff;
 	display: block;
 	width: 65px;
 	margin-top: 20px;
@@ -142,7 +143,7 @@ strong {
 
 blockquote {
 	margin: 0em 55px;
-	border-left: 4px solid #CCCCCC;
+	border-left: 4px solid #059bf1;
 }
 
 dfn {
@@ -153,7 +154,7 @@ mark {
 	background: #ff0;
 	color: #000;
 }
-
+/*
 p,
 pre {
 	margin: 1em 0;
@@ -209,7 +210,7 @@ p {
 	font-weight: 100;
 	line-height: 28px !important;
 }
-
+*/
 /* Lists */
 dl,
 menu,
@@ -256,7 +257,7 @@ table {
 
 /* Navigation */
 .menu-wrap a {
-	color: #555d7c;
+	color: #ffffff;
 	outline: none !important;
 }
 
@@ -299,7 +300,7 @@ table {
 	border: none;
 	text-indent: 2.5em;
 	color: transparent;
-	background: #f3f5f8;
+	background: #121313;
 }
 
 .menu-button::before {
@@ -319,7 +320,7 @@ table {
 /* Menu */
 .menu-wrap {
 	z-index: 999;
-	background: rgba(255, 255, 255, 1);
+	background: #121313;
 	-webkit-transition: width 0.4s, height 0.4s, -webkit-transform 0.4s;
 	transition: width 0.4s, height 0.4s, transform 0.4s;
 	-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
@@ -344,7 +345,7 @@ table {
 	margin: 0 15px;
 	text-align: center;
 	font-size: 1.2em;
-	color: #353535;
+	color: #ffffff;
 }
 
 .icon-list a span {
@@ -411,7 +412,7 @@ table {
 	background-size: contain;
 	padding: 110px 0 100px 0;
 	height: auto;
-	background-color: #f3f5f8;
+	background-color: #121313;
 }
 
 .renato h1 {
@@ -446,11 +447,14 @@ table {
 }
 
 /* About */
+.about {
+	margin: 40px;
+}
 .about-content {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-
+	margin-right: auto;
+	min-width: auto;
 	height: 400px;
 }
 
@@ -480,8 +484,10 @@ table {
 }
 
 .about img {
-	width: 100%;
+	min-width: 300px;
+	max-width: 50%;
 }
+
 
 /* Skills */
 .skills .progress {
@@ -497,7 +503,7 @@ table {
 	font-weight: 400;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	color: #222222;
+	color: #eeeeee;
 }
 
 .curriculum .curriculum-item {
@@ -518,12 +524,12 @@ table {
 
 .curriculum .curriculum-item h5 {
 	font-size: 16px;
-	background: #effbf9;
+	background: #059bf1;
 	padding: 5px 15px;
 	display: inline-block;
 	font-weight: 600;
 	margin-bottom: 10px;
-	color: #059bf1;
+	color: #121313;
 }
 
 .curriculum .curriculum-item ul {
@@ -546,7 +552,7 @@ table {
 	border-radius: 50px;
 	left: -9px;
 	top: 0;
-	background: #fff;
+	background: #E04343;
 	border: 2px solid #059bf1;
 }
 
@@ -570,7 +576,7 @@ table {
 	font-weight: 500;
 	line-height: 1;
 	text-transform: uppercase;
-	color: #444444;
+	color: #ffffff;
 	margin-bottom: 5px;
 	transition: all 0.3s ease-in-out;
 	border-radius: 50px;
@@ -888,16 +894,16 @@ ul.social-buttons li:last-child {
 
 /* Footer  */
 footer a {
-	color: #a1a9b0;
+	color: #ffffff;
 }
 
 footer {
-	background-color: #f3f5f8;
+	background-color: #121313;
 	padding: 40px 0 30px;
 }
 
 footer p {
-	color: #808080;
+	color: #ffffff;
 }
 
 /* Boucing Arrow Animation */
@@ -1101,7 +1107,7 @@ footer p {
 	}
 
 	.wrapper {
-		background: #f3f5f8;
+		background: #121313;
 		height: 540px;
 	}
 
